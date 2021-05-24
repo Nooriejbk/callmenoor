@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="p:domain_verify" content="62e3c5636848a54c743e321d1ac11722"/>
+    <title>CallMeNoor</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" href="images/main.png">
+  </head>
+  <body>
+    <header id="top">
+      <section id="banner" class="fade-in">
+        <!--<h2> ~ Hiya! ~ </h2>
+        <h1>Call Me Noor</h1>
+        -->
+        <div class="imageholder" title="...or Noorie. I dont really care.">
+          <img src="images/lie-to-me.regular(white).png" alt="Callmenoor logo">
+        </div>
+        <br>
+        <div class="buttonholder" title="Clickidy Click!   ...or scroll. That does the same thing">
+          <a href="#site"><button>Continue</button></a>
+        </div>
+      </section>
+    </header>
+    <main id="site">
+      <section id="about">
+        <div class="entityholder">
+          <section class="entity" id="face">
+            <div class="imageholder" title="My Face.">
+              <img src="images/IMG_20191128_212905_598.jpg" alt="Noor-profile">
+            </div>
+          </section>
+          <section class="entity" id="bio">
+            <h2> A little bit about me... </h2>
+            <p> Hey! My name is Noor Jahan but <br>you can <em>Call Me Noor</em>.<br><br>
+              I'm an Singer/Actress with half a degree in Computer Science and no idea what I want to do with my life. <br><br>
+              Fun Fact : I build websites and I built this one. Unfortunately I haven't published the others yet. <br><br>
+              Watch this space, I'm not finished yet.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section id="projects">
+        <h2> My Work </h2>
+        <p> Check out my <em>Acting CV</em>, <em>Showreel</em> and <em>Latest Youtube Video</em>. </p>
+        <div class="entityholder">
+
+          <section class="entity" id="showreel">
+            <div class="resp-container">
+              <a href="https://www.spotlight.com/0458-0194-0341"><img class="resp-iframe" src="images\Spotlightimage1.jpg"></a>
+            </div>
+          </section>
+
+          <section class="entity" id="showreel">
+            <div class="resp-container">
+              <iframe class="resp-iframe" src="https://www.youtube.com/embed/L7FaT7FwQys" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+          </section>
+
+          <section class="entity" id="showreel">
+            <div class="resp-container">
+              <iframe class="resp-iframe" src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=nooriejbk" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </section>
+
+
+        <!--
+
+
+        <section class="entity" id="contact">
+          <h2> I build sites, want one? </h2>
+          <form action="/action.contact.php">
+            <label for="fullname"> Name:</label><br>
+            <input type="text" id="fullname" name="fullname"> <br>
+            <label for="Email"> Email:</label><br>
+            <input type="email" id="Email" name="Email"> <br>
+            <label for="message"> Request:</label><br>
+            <textarea id="message" name="message" rows="5" cols="20"> </textarea><br>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+
+        -->
+
+
+        </div>
+        <br>
+      </section>
+      <!--<section id="contact">
+
+      </section>-->
+    </main>
+
+    <a id="uppy" href="#top" onclick="goup()" title="Back to top">
+			<div class="imageholder">
+				<img src="images/home.png" alt="Back to top">
+			</div>
+		</a>
+    <script>
+    //Get the button:
+    mybutton = document.getElementById("uppy");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+    <footer>
+      <h2> Contact Me </h2>
+      <p> Interested in getting in touch? Check out some of my socials. </p>
+      <div id="socials">
+        <div class="imageholder" title="Follow Me!">
+          <a href="https://www.instagram.com/nooriejbk/"><img src="images/icons/002-instagram-1.png" alt="instagram logo" ></a>
+        </div>
+        <div class="imageholder" title="I make videos sometimes">
+          <a href="https://www.youtube.com/user/NoorieJBK"><img src="images/icons/007-youtube.png" alt="youtube logo" ></a>
+        </div>
+        <div class="imageholder" title="Check out my tweets!">
+          <a href="https://twitter.com/NoorieJBK"><img src="images/icons/005-twitter.png" alt="twitter logo" ></a>
+        </div>
+        <div class="imageholder" title="Connect with me!">
+          <a href="https://www.linkedin.com/in/callmenoor/"><img src="images/icons/003-linkedin.png" alt="linkedin logo" ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

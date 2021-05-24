@@ -1,0 +1,412 @@
+
+* {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+}
+header{
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/art-1428646_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  /*opacity: 0.8;*/
+  background-color: black;
+  /*background-image: url(images/5758eac421578c4f286b3edf60a0f2d5.jpg);
+  background-repeat: repeat;
+  background-position: center center;
+  background-position: center top;*/
+
+}
+#banner{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  /*padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;*/
+}
+/*
+#banner h2{
+  color: white;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "candara";
+}
+#banner h1{
+  color: white;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "candara";
+  display: block;
+  text-transform: uppercase;
+}*/
+#banner .imageholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+#banner img{
+  display: block;
+  width: 100%;
+  filter: drop-shadow(15px 5px 5px #000)
+}
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+#banner .buttonholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+#banner button{
+  border: 5px solid white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+  font-family: "candara";
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+#banner button:hover {
+color: #ffffff !important;
+background: lightblue;
+border-color: lightblue !important;
+transition: all 0.4s ease 0s;
+}
+
+#about{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: "candara";
+  padding-bottom: 5%;
+  border-bottom: 10px solid black;
+}
+#about .entityholder{
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+#about .entity{
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-top: 10%;
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+#about #face{
+  max-width: 35%;
+  /*margin-left: 5%;
+  margin-right: 10%;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about #bio{
+  /*padding-top: 15%;*/
+  margin-left: 10%;
+  width: 45%;
+  display: inline-block
+}
+#about .imageholder{
+  width: 100%;
+}
+#about .entity img{
+  border-radius: 50%;
+  border: solid 5px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+#about h2{
+  height: 10%;
+  /*text-transform: uppercase;*/
+
+}
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 1001px) {
+  #about h2 {
+    font-size: 2vw;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 1000px) {
+  #about h2 {
+    font-size: 3vw;
+  }
+}
+
+#about p{
+  color: darkmagenta;
+}
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 1001px) {
+  #about p {
+    font-size: 1.5vw;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 1000px) {
+  #about p {
+    font-size: 2vw;
+  }
+}
+
+
+#projects{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: "candara";
+  padding-bottom: 5%;
+  border-bottom: 10px solid black;
+}
+
+#projects h2{
+  height: 10%;
+  /*text-transform: uppercase;*/
+
+}
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 1001px) {
+  #projects h2 {
+    font-size: 2vw;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 1000px) {
+  #projects h2 {
+    font-size: 3vw;
+  }
+}
+#projects p{
+  color: darkmagenta;
+}
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 1001px) {
+  #projects p {
+    font-size: 1.5vw;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 1000px) {
+  #projects p {
+    font-size: 2vw;
+  }
+}
+#projects .entityholder{
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+#projects .entity{
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 5%;
+  width: 31%;
+  float: left;
+  /*filter: drop-shadow(15px 5px 5px #808080)*/
+}
+/* Is this needed?
+.entity h2{
+  font-family: "candara";
+  text-align: center;
+  font-size: 3vw;
+}
+.entity p{
+  font-size: 1vw;
+  text-align: center;
+  padding: 3%;
+  font-family: "candara";
+}*/
+#projects .imageholder{
+  width: 100%;
+}
+#projects .entity img{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.resp-container {
+  position: relative;
+  padding-top: 56.25%;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+  max-width: 100%;
+}
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/*
+#contact{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: "candara";
+  padding-bottom: 5%;
+  max-height: 500px;
+  border-bottom: 10px solid black;
+}
+#contact h2{
+  height: 10%;
+  font-size: 4vw;
+}
+#contact p{
+  font-size: 2vw;
+  color: darkmagenta;
+}
+*/
+#uppy{
+  position: fixed;
+  bottom: 15%;
+  float: right;
+  right: 18.5%;
+  left: 77%;
+  /*bottom: 20px;
+  right: 30px;*/
+  display: none; /* Hidden by default */
+  z-index: 99;
+  cursor: pointer;
+}
+#uppy img{
+  max-width: 100%;
+}
+
+footer{
+  padding-bottom: 5%;
+}
+footer h2{
+  height: 10%;
+  text-align: center;
+  font-family: "candara";
+}
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 1001px) {
+  footer h2 {
+    font-size: 2vw;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 1000px) {
+  footer h2 {
+    font-size: 3vw;
+  }
+}
+footer p{
+  text-align: center;
+  font-size: 2vw;
+  font-family: "candara";
+}
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 1001px) {
+  footer p {
+    font-size: 1.5vw;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 1000px) {
+  footer p {
+    font-size: 2vw;
+  }
+}
+#socials{
+  padding-left: 42%;
+  padding-right: 42%;
+}
+#socials .imgholder {
+  width: 100%;
+}
+#socials img{
+  max-width: 17%;
+  float: left;
+  margin: 4%;
+  overflow: hidden;
+}

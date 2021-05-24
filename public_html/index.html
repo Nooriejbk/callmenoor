@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="master.css">
     <link rel="icon" href="images/main.png">
   </head>
+
   <body>
     <header id="top">
       <section id="banner" class="fade-in">
@@ -18,12 +19,50 @@
           <img src="images/lie-to-me.regular(white).png" alt="Callmenoor logo">
         </div>
         <br>
-        <div class="buttonholder" title="Clickidy Click!   ...or scroll. That does the same thing">
-          <a href="#site"><button>Continue</button></a>
+        <div id="section06" class="demo">
+          <a href="#site"><span></span></a>
         </div>
+        <script>
+          $(function() {
+            $('a[href*=#]').on('click', function(e) {
+              e.preventDefault();
+              $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            });
+          });
+        </script>
       </section>
     </header>
+
+
+
     <main id="site">
+      <section id="newest">
+        <h2> Newest Work </h2>
+        <p> Check out my Newest additions and my Latest Youtube Video. </p>
+        <div class="entityholder">
+
+          <div class="entity" id="showreel">
+            <div class="resp-container">
+              <a href="www.depop.com/stickernoor/?shareButtonLink=true"><img class="resp-iframe" src="images\20210515_004107_0000.png"></a>
+            </div>
+          </div>
+
+          <div class="entity" id="showreel">
+            <div class="resp-container">
+              <a href="https://www.spotlight.com/0458-0194-0341"><img class="resp-iframe" src="images\Spotlightimage1.jpg"></a>
+            </div>
+          </div>
+
+          <div class="entity" id="showreel">
+            <div class="resp-container">
+              <iframe class="resp-iframe" src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=nooriejbk" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+        <br>
+      </section>
+
       <section id="about">
         <div class="entityholder">
           <section class="entity" id="face">
@@ -41,56 +80,13 @@
           </section>
         </div>
       </section>
-      <section id="projects">
-        <h2> My Work </h2>
-        <p> Check out my <em>Acting CV</em>, <em>Showreel</em> and <em>Latest Youtube Video</em>. </p>
-        <div class="entityholder">
 
-          <section class="entity" id="showreel">
-            <div class="resp-container">
-              <a href="https://www.spotlight.com/0458-0194-0341"><img class="resp-iframe" src="images\Spotlightimage1.jpg"></a>
-            </div>
-          </section>
+      <section id="portfolio">
+        <h2> Portfolios </h2>
+        <h3> Coming soon </h3>
 
-          <section class="entity" id="showreel">
-            <div class="resp-container">
-              <iframe class="resp-iframe" src="https://www.youtube.com/embed/L7FaT7FwQys" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
-            </div>
-          </section>
-
-          <section class="entity" id="showreel">
-            <div class="resp-container">
-              <iframe class="resp-iframe" src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=nooriejbk" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </section>
-
-
-        <!--
-
-
-        <section class="entity" id="contact">
-          <h2> I build sites, want one? </h2>
-          <form action="/action.contact.php">
-            <label for="fullname"> Name:</label><br>
-            <input type="text" id="fullname" name="fullname"> <br>
-            <label for="Email"> Email:</label><br>
-            <input type="email" id="Email" name="Email"> <br>
-            <label for="message"> Request:</label><br>
-            <textarea id="message" name="message" rows="5" cols="20"> </textarea><br>
-            <br>
-            <input type="submit" value="Submit">
-          </form>
-        </section>
-
-        -->
-
-
-        </div>
-        <br>
       </section>
-      <!--<section id="contact">
 
-      </section>-->
     </main>
 
     <a id="uppy" href="#top" onclick="goup()" title="Back to top">
@@ -120,22 +116,36 @@
     }
     </script>
     <footer>
-      <h2> Contact Me </h2>
-      <p> Interested in getting in touch? Check out some of my socials. </p>
-      <div id="socials">
-        <div class="imageholder" title="Follow Me!">
-          <a href="https://www.instagram.com/nooriejbk/"><img src="images/icons/002-instagram-1.png" alt="instagram logo" ></a>
+      <div id="signoff">
+        <div id="footer-logo">
+          <div class="imageholder">
+            <img src="images/main.png" alt="CallMeNoor Logo">
+          </div>
         </div>
-        <div class="imageholder" title="I make videos sometimes">
-          <a href="https://www.youtube.com/user/NoorieJBK"><img src="images/icons/007-youtube.png" alt="youtube logo" ></a>
-        </div>
-        <div class="imageholder" title="Check out my tweets!">
-          <a href="https://twitter.com/NoorieJBK"><img src="images/icons/005-twitter.png" alt="twitter logo" ></a>
-        </div>
-        <div class="imageholder" title="Connect with me!">
-          <a href="https://www.linkedin.com/in/callmenoor/"><img src="images/icons/003-linkedin.png" alt="linkedin logo" ></a>
+        <h2> CallMeNoor</h2>
+
+        <p>CallMeNoor 2020 | Created by <a href="http://www.callmenoor.com/">CallMeNoor</a></p>
+        <div id="socials">
+          <div class="imageholder">
+            <a href="https://www.instagram.com/nooriejbk/"><img src="images/icons/017-instagram-2.png" alt="instagram logo" ></a>
+          </div>
+          <div class="imageholder">
+            <a href="https://www.youtube.com/user/NoorieJBK"><img src="images/icons/021-youtube-2.png" alt="youtube logo" ></a>
+          </div>
+          <div class="imageholder">
+            <a href="https://twitter.com/NoorieJBK"><img src="images/icons/019-twitter-2.png" alt="twitter logo" ></a>
+          </div>
+          <div class="imageholder">
+            <a href="https://www.linkedin.com/in/callmenoor/"><img src="images/icons/020-linkedin-2.png" alt="linkedin logo" ></a>
+          </div>
         </div>
       </div>
-    </footer>
+      <div id="Contactfoot">
+        <h2> Contact me </h2>
+        <p> Email : Nooriejbk@gmail.com </p>
+        <br>
+
+      </div>
+    <footer>
   </body>
 </html>

@@ -12,38 +12,16 @@
 
   <body>
     <header id="top">
-      <section>
-        <ul id="nav" class="navbar navbar-fixed-top">
-          <li><a href="#newest"> Recent </a></li>
-          <li><a href="#about"> About </a></li>
-          <li><a href="#portfolio"> Portfolio</a></li>
-        </ul>
-        <script>
-        navy = document.getElementById("nav");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-          if (document.body.scrollTop < 400 ) {
-            navy.classList.remove("scroll");
-          } else {
-            navy.cclassList.add("scroll");
-          }
-        }
-
-        </script>
-      </section>
-
 
       <section id="banner" class="fade-in">
         <div class="imageholder" title="...or Noorie. I dont really care.">
           <img src="images/lie-to-me.regular(white).png" alt="Callmenoor logo">
+          <br>
+          <div id="section06" class="demo">
+            <a href="#site"><span></span></a>
+          </div>
         </div>
-        <br>
-        <div id="section06" class="demo">
-          <a href="#site"><span></span></a>
-        </div>
+
         <script>
           $(function() {
             $('a[href*=#]').on('click', function(e) {
@@ -58,25 +36,31 @@
 
     <main id="site">
       <section id="newest">
-        <h2> Newest Work </h2>
+        <h2> Recent Work </h2>
         <p> Check out my Newest additions and my Latest Youtube Video. </p>
         <div class="entityholder">
 
           <div class="entity">
             <div class="resp-container">
               <a href="www.depop.com/stickernoor/?shareButtonLink=true"><img class="resp-iframe" src="images\20210515_004107_0000.png" alt="Click here to see my Depop"></a>
+              <h3> Selling Stickers!</h3>
+              <p> Back in 2015, I got my first personal laptop and i decided to buy a whole bunch of vinyl laptop stickers to decorate it.</p><p> Long story short i bought way way too many and now i've decided to sell them on depop!</p>
             </div>
           </div>
 
           <div class="entity">
             <div class="resp-container">
               <a href="https://www.spotlight.com/0458-0194-0341"><img class="resp-iframe" src="images\Spotlightimage.png" alt="Click here to see my spotlight profile"></a>
+              <h3> Selling Stickers!</h3>
+              <p> Back in 2015, I got my first personal laptop and i decided to buy a whole bunch of vinyl laptop stickers to decorate it. Long story short i bought way way too many and now i've decided to sell them on depop!</p>
             </div>
           </div>
 
           <div class="entity" >
             <div class="resp-container">
-              <iframe class="resp-iframe" src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=nooriejbk" frameborder="0" allowfullscreen></iframe>
+              <a href="https://www.spotlight.com/0458-0194-0341"><img class="resp-iframe" src="images\Spotlightimage.png" alt="Click here to see my spotlight profile"></a>
+              <h3> Selling Stickers!</h3>
+              <p> Back in 2015, I got my first personal laptop and i decided to buy a whole bunch of vinyl laptop stickers to decorate it. Long story short i bought way way too many and now i've decided to sell them on depop!</p>
             </div>
           </div>
 
@@ -86,19 +70,19 @@
 
       <section id="about">
         <div class="entityholder">
-          <section class="entity" id="face">
+          <div class="entity" id="face">
             <div class="imageholder" title="My Face.">
               <img src="images/IMG_20191128_212905_598.jpg" alt="Noor-profile">
             </div>
-          </section>
-          <section class="entity" id="bio">
+          </div>
+          <div class="entity" id="bio">
             <h2> A little bit about me... </h2>
             <p> Hey! My name is Noor Jahan but <br>you can <em>Call Me Noor</em>.<br><br>
               I'm an Singer/Actress with half a degree in Computer Science and no idea what I want to do with my life. <br><br>
               Fun Fact : I build websites and I built this one. Unfortunately I haven't published the others yet. <br><br>
               Watch this space, I'm not finished yet.
             </p>
-          </section>
+          </div>
         </div>
       </section>
 

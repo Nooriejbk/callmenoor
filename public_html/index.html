@@ -7,135 +7,167 @@
     <title>CallMeNoor</title>
     <link rel="stylesheet" href="master.css">
     <link rel="icon" href="images/main.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHBF3CT7TL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MHBF3CT7TL');
+</script>
   </head>
+
   <body>
     <header id="top">
+
       <section id="banner" class="fade-in">
-        <!--<h2> ~ Hiya! ~ </h2>
-        <h1>Call Me Noor</h1>
-        -->
         <div class="imageholder" title="...or Noorie. I dont really care.">
           <img src="images/lie-to-me.regular(white).png" alt="Callmenoor logo">
+          <br>
+          <div id="section06" class="demo">
+            <a href="#site"><span></span></a>
+          </div>
         </div>
-        <br>
-        <div class="buttonholder" title="Clickidy Click!   ...or scroll. That does the same thing">
-          <a href="#site"><button>Continue</button></a>
-        </div>
+
+        <script>
+          $(function() {
+            $('a[href*=#]').on('click', function(e) {
+              e.preventDefault();
+              $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            });
+          });
+
+        </script>
       </section>
     </header>
+
     <main id="site">
+
       <section id="about">
         <div class="entityholder">
-          <section class="entity" id="face">
+          <div class="entity" id="face">
             <div class="imageholder" title="My Face.">
-              <img src="images/IMG_20191128_212905_598.jpg" alt="Noor-profile">
+              <img src="images\IMG_20190128_092931_113.jpg" alt="Noor-profile">
             </div>
-          </section>
-          <section class="entity" id="bio">
-            <h2> A little bit about me... </h2>
-            <p> Hey! My name is Noor Jahan but <br>you can <em>Call Me Noor</em>.<br><br>
-              I'm an Singer/Actress with half a degree in Computer Science and no idea what I want to do with my life. <br><br>
-              Fun Fact : I build websites and I built this one. Unfortunately I haven't published the others yet. <br><br>
-              Watch this space, I'm not finished yet.
-            </p>
-          </section>
+          </div>
+          <div class="entity" id="bio">
+            <h2> Welcome!</h2>
+            <p> Hello and welcome to the latest iteration of CallMeNoor.com! <br><br> You may have been here before, you may not have, but here's the rundown...<br><br>
+              I'm Noor and this is my personal website. I bought the domain with no plan on what I wanted to do with it... so I've decided I'm going to use it to teach myself web development skills and also showcase any other bit and bobs I may want to share.<br><br>
+              The current plan is to update the site every month with new features and new info. Next update : 1st July 2021 <br> <br>
+              A little about myself, I'm about to go into my 3rd year of a BSc Computer Science, don't really have much of a plan for after but I'm working on it. <br><br>
+              I'm also a Singer/Actress. Haven't been in much or performed in a while (pandemic :/) but when I do, it'll all be here.
+
+
+          </div>
         </div>
       </section>
-      <section id="projects">
-        <h2> My Work </h2>
-        <p> Check out my <em>Acting CV</em>, <em>Showreel</em> and <em>Latest Youtube Video</em>. </p>
+      <section id="newest">
+        <h2> Recent Work </h2>
+        <p> Check out my newest additions and latest youtube video</p>
         <div class="entityholder">
 
-          <section class="entity" id="showreel">
+          <div class="entity">
             <div class="resp-container">
-              <a href="https://www.spotlight.com/0458-0194-0341"><img class="resp-iframe" src="images\Spotlightimage1.jpg"></a>
-            </div>
-          </section>
+              <a href="https://www.depop.com/stickernoor/"><img class="resp-iframe" src="images\20210515_004107_0001.png" alt="Click here to see my Depop"></a>
+              <br>
+              <h3> Selling Stickers!</h3>
+              <p> Back in 2015, I got my first personal laptop and I decided to buy a whole bunch of vinyl laptop stickers to decorate it.</p><p> Long story short I bought way, way too many and now I've decided to sell them on depop!</p>
 
-          <section class="entity" id="showreel">
-            <div class="resp-container">
-              <iframe class="resp-iframe" src="https://www.youtube.com/embed/L7FaT7FwQys" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
             </div>
-          </section>
+          </div>
 
-          <section class="entity" id="showreel">
+
+
+          <div class="entity">
             <div class="resp-container">
               <iframe class="resp-iframe" src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=nooriejbk" frameborder="0" allowfullscreen></iframe>
             </div>
-          </section>
-
-
-        <!--
-
-
-        <section class="entity" id="contact">
-          <h2> I build sites, want one? </h2>
-          <form action="/action.contact.php">
-            <label for="fullname"> Name:</label><br>
-            <input type="text" id="fullname" name="fullname"> <br>
-            <label for="Email"> Email:</label><br>
-            <input type="email" id="Email" name="Email"> <br>
-            <label for="message"> Request:</label><br>
-            <textarea id="message" name="message" rows="5" cols="20"> </textarea><br>
             <br>
-            <input type="submit" value="Submit">
-          </form>
-        </section>
+            <h3> Latest Youtube Video </h3>
+            <p> Singing, acting, projects and crafts <br> <br>Trying to upload more often so keep an eye out for new content every month </p>
+          </div>
 
-        -->
-
+          <div class="entity">
+            <div class="resp-container">
+              <br>
+              <h3> Spotlight Resume</h3>
+              <p> I'll probably find a better place to put this but for now its here for easy access <br><br> For any casting enquiries, check out my spotlight. </p>
+              <a href="https://www.spotlight.com/0458-0194-0341"><img class="resp-iframe" src="images\spotlight-logo-1024x1024.jpg" alt="Click here to see my spotlight profile"></a>
+            </div>
+          </div>
 
         </div>
         <br>
       </section>
-      <!--<section id="contact">
 
-      </section>-->
+
+
+      <section id="portfolio">
+        <h2> Portfolios </h2>
+        <h4> Coming soon </h4>
+
+      </section>
+
+          <a id="uppy" href="#top" onclick="goup()" title="Back to top">
+      			<div class="imageholder">
+      				<img src="images/home.png" alt="Back to top">
+      			</div>
+      		</a>
+          <script>
+          //Get the button:
+          mybutton = document.getElementById("uppy");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+          </script>
+          <footer>
+            <div id="signoff">
+              <div id="footer-logo">
+                <div class="imageholder">
+                  <img src="images/main.png" alt="CallMeNoor Logo">
+                </div>
+              </div>
+              <h2> CallMeNoor</h2>
+
+              <p>CallMeNoor 2020 | Created by <a href="http://www.callmenoor.com/">CallMeNoor</a></p>
+              <div id="socials">
+                <div class="imageholder">
+                  <a href="https://www.instagram.com/nooriejbk/"><img src="images/icons/017-instagram-2.png" alt="instagram logo" ></a>
+                </div>
+                <div class="imageholder">
+                  <a href="https://www.youtube.com/user/NoorieJBK"><img src="images/icons/021-youtube-2.png" alt="youtube logo" ></a>
+                </div>
+                <div class="imageholder">
+                  <a href="https://twitter.com/NoorieJBK"><img src="images/icons/019-twitter-2.png" alt="twitter logo" ></a>
+                </div>
+                <div class="imageholder">
+                  <a href="https://www.linkedin.com/in/callmenoor/"><img src="images/icons/020-linkedin-2.png" alt="linkedin logo" ></a>
+                </div>
+              </div>
+            </div>
+            <div id="Contactfoot">
+              <h2> Contact me </h2>
+              <p> Email : CallMeNoorK@gmail.com </p>
+              <br>
+            </div>
+          </footer>
     </main>
 
-    <a id="uppy" href="#top" onclick="goup()" title="Back to top">
-			<div class="imageholder">
-				<img src="images/home.png" alt="Back to top">
-			</div>
-		</a>
-    <script>
-    //Get the button:
-    mybutton = document.getElementById("uppy");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-    </script>
-    <footer>
-      <h2> Contact Me </h2>
-      <p> Interested in getting in touch? Check out some of my socials. </p>
-      <div id="socials">
-        <div class="imageholder" title="Follow Me!">
-          <a href="https://www.instagram.com/nooriejbk/"><img src="images/icons/002-instagram-1.png" alt="instagram logo" ></a>
-        </div>
-        <div class="imageholder" title="I make videos sometimes">
-          <a href="https://www.youtube.com/user/NoorieJBK"><img src="images/icons/007-youtube.png" alt="youtube logo" ></a>
-        </div>
-        <div class="imageholder" title="Check out my tweets!">
-          <a href="https://twitter.com/NoorieJBK"><img src="images/icons/005-twitter.png" alt="twitter logo" ></a>
-        </div>
-        <div class="imageholder" title="Connect with me!">
-          <a href="https://www.linkedin.com/in/callmenoor/"><img src="images/icons/003-linkedin.png" alt="linkedin logo" ></a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

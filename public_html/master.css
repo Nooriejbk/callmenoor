@@ -399,7 +399,7 @@ section{
 #updates{
   width: 100%;
   margin : 0;
-  min-height: 100vh;
+  min-height: 100%;
   display: inline-table;
   font-family: "candara";
   padding-bottom: 5%;
@@ -438,10 +438,10 @@ section{
   top: 50%;
   width: auto;
   /*margin-top: -22px;*/
-  padding: 16px;
+  padding: 1%;
   color: darkmagenta;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1vw;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -449,13 +449,13 @@ section{
 .prev{
   z-index: 2;
   left: 0;
-  top: 30vh;
+  top: 20vh;
 }
 /* Position the "next button" to the right */
 .next {
   z-index: 2;
   right: 0;
-  top: 30vh;
+  top: 20vh;
   border-radius: 3px 0 0 3px;
 }
 
@@ -480,7 +480,8 @@ section{
   text-align: center;
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 48%;
+
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -723,6 +724,16 @@ footer p{
   .pill__icon-img-hCjBGsFOoz {
     width: 3vw;
   }
+  .prev{
+    top: 30vh;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    top: 30vh;
+  }
+  .prev, .next {
+    font-size: 3vw;
+  }
 }
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
@@ -748,7 +759,7 @@ footer p{
   h2 {
     font-size: 4vw;
   }
-  h4{
+  h3{
     font-size: 3vw;
   }
 
@@ -762,6 +773,26 @@ footer p{
   .pill-hCjBGsFOoz{
     margin-left: 35%;
     margin-right: 35%;
+  }
+  #updates #dotGroup{
+    right: 40%;
+    left: 40%;
+
+  }
+  .prev, .next {
+    padding: 3%;
+    font-size: 3vw;
+  }
+  .dot {
+    height: 5px;
+    width: 5px;
+  }
+  #ogImages{
+    margin-top: 7%;
+  }
+  #mayImages{
+    margin-top: 10%;
+    width: 20%;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -778,5 +809,8 @@ footer p{
   #section06 a span {
     width: 150px;
     height: 150px;
+  }
+  .prev, .next {
+    font-size: 3vw;
   }
 }

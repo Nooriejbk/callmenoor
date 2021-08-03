@@ -1,0 +1,616 @@
+/*-----------------Consistency values------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+h2 {
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  /*font-size: 2vw;*/
+  }
+
+/*---------------Navigation and welcome banner----------------------*/
+header{
+  min-height: 100vh;
+  background-image: url(images/banner.jpg);
+  /*background-position: center center, center top;
+  background-repeat: repeat, no-repeat;*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: gainsboro;
+  overflow: hidden;
+  position: relative;
+}
+/*---------------------------Navigation bar-------------------------*/
+nav {
+  text-align: center;
+  padding-top: 2%;
+  position: fixed;
+  top: 0;
+}
+nav ul {
+  /*background-color: lightgrey; /*example colors - change for aethstic*/
+   /*area around all elements included*/
+  z-index:1;
+}
+nav li {
+  position: relative;
+  padding: 20px; /*area of elements - no color? no need.*/
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  letter-spacing: .07em;
+}
+nav li a{
+  text-decoration: none;
+  display: block;
+  color: white;
+  transition: all 300ms linear;
+}
+nav li a:hover {
+  color: grey;
+}
+/*------------------------------Logo-------------------------------*/
+#logo {
+    width: 30%;
+    float: left;
+    padding-right: 2%;
+    margin-left: 2%;
+
+  }
+#logo .imageholder{
+  float: left;
+  display: block;
+  width: 30%;
+  padding: 5%;
+  /*max-width: 15%;
+  float: center;*/
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+#logoName {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 2vw;
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+}
+
+/*---------------Banner------------------*/
+
+
+#Banner{
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 5%;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#Banner h2{
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 4vw;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-shadow: 2px 2px black;
+}
+#Banner h3{
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 2vw;
+  font-family: 'Quattrocento Sans', sans-serif;
+  opacity: 1;
+  text-shadow: 2px 2px black;
+}
+#Banner p{
+  text-align: center;
+  font-size: 2vw;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+/*------------- Personal Bio -----------------*/
+#personalbio {
+  background-color: gainsboro;
+}
+#personalbio h2{
+  text-align: center;
+}
+
+#personalbio .imgholder img{
+  max-width: 100%;
+}
+
+#personalbio .imageholder{
+  /*margin: ;*/
+  width:100%;
+}
+
+#personalbio .entityholder {
+  display: inline-flex;
+}
+
+#personalbio .entity {
+  float: left;
+  max-width: 50%;
+}
+#personalbio .bio{
+  padding: 5%;
+}
+#personalbio p{
+  font-size: 1.1vw;
+  padding-top: 2%;
+}
+/*------------ Training Bio ----------------*/
+
+#trainingbio {
+  margin:0;
+  background-color: gainsboro;
+  width: 100%;
+}
+#trainingbio img{
+  max-height: 20vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+/*--------------Studio -----------------*/
+
+#studio{
+  padding:2%;
+  text-align: center;
+  background-color: #5a5a5a;
+  color: white;
+}
+#studio .entityholder{
+  width: 100%;
+  display: inline-table;
+}
+#studio .entity{
+  max-width: 50%;
+  float: left;
+}
+#studio #info{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#studio p{
+  font-size: 1vw;
+}
+#studio p a{
+  color: white;
+  font-weight: bold;
+  color: pink;
+}
+#studio .grid{
+  padding: 5%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+  width: 100%;
+  overflow: hidden;
+}
+/*-------------- Started ---------------*/
+
+#started {
+  padding:1%;
+  text-align: center;
+  background-color: gainsboro;
+  letter-spacing: .05em;
+}
+#started #pricerow {
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: 'Quattrocento Sans', sans-serif;
+  /*font-size: 1vw;*/
+}
+
+/* Create two equal columns that sits next to each other */
+#started #pricecolumn {
+  float: left;
+  width: 50%;
+}
+* {
+box-sizing: border-box;
+}
+body {
+font-family: Roboto, Helvetica, sans-serif;
+}
+/* Fix the button on the left side of the page */
+.open-btn {
+display: flex;
+justify-content: left;
+}
+/* Style and fix the button on the page */
+.open-button {
+background-color: #1c87c9;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+}
+/* Position the Popup form */
+.login-popup {
+position: relative;
+text-align: center;
+width: 100%;
+}
+/* Hide the Popup form */
+.form-popup {
+display: none;
+position: fixed;
+left: 45%;
+top:5%;
+transform: translate(-45%,5%);
+border: 2px solid #666;
+z-index: 9;
+}
+/* Styles for the form container */
+.form-container {
+max-width: 300px;
+padding: 20px;
+background-color: #fff;
+}
+/* Full-width for input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #eee;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+/* Style submit/login button */
+.form-container .btn {
+background-color: #8ebf42;
+color: #fff;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+/* Style cancel button */
+.form-container .cancel {
+background-color: #cc0000;
+}
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+/*---------------- Question --------------*/
+
+#questions {
+  padding:2%;
+  margin: 2%;
+  border: 1%;
+  border-style: solid;
+  border-color: purple;
+}
+
+/*------------ Testimonials -------------*/
+#Testimonials {
+  /*margin: 2%;*/
+  padding: 2%;
+  /*background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(40,70,251,1) 0%, rgba(43,42,42,1) 100%);*/
+  background-color: gainsboro;
+  color: black;
+  max-height: 20%;
+}
+
+#Testimonials h2{
+  color: black;
+  text-align: center;
+}
+
+#Testimonials .imageholder{
+  width: 100%;
+  max-height: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+#Testimonials .imgholder img{
+  width: 100%;
+  max-height: fit-content;
+  padding: 20%;
+  float: center;
+}
+#Testimonials .bio{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: black;
+  font-family: candara;
+  float: left;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#Testimonials p{
+  float: right;
+  font-size: 2vw;
+}
+#Testimonials .entityholder {
+  padding-left: 2%;
+  padding-right: 2%;
+  display: inline-block;
+}
+#Testimonials .entity {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  float: left;
+  max-width: 45%;
+  padding: 2%;
+}
+#Testimonials .onlytext {
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  float: left;
+}
+* {
+  box-sizing: border-box
+}
+body {
+  font-family: Verdana, sans-serif; margin:0
+}
+.mySlides {
+  display: none
+}
+#Testimonials img {
+  max-width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 1vw;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 1vw}
+}
+/*------------- Back to top ------------*/
+#uppy{
+  position: fixed;
+  bottom: 15%;
+  float: right;
+  right: 18.5%;
+  left: 77%;
+  /*bottom: 20px;
+  right: 30px;*/
+  display: none; /* Hidden by default */
+  z-index: 99;
+  cursor: pointer;
+}
+#uppy img{
+  max-width: 100%;
+}
+/*------------- Back to CallMeNoor--------*/
+#back{
+  position: fixed;
+  bottom: 15%;
+  float: right;
+  right: 18.5%;
+  left: 77%;
+  /*bottom: 20px;
+  right: 30px;*/
+  display: none; /* Hidden by default */
+  z-index: 99;
+  cursor: pointer;
+}
+#back img{
+  max-width: 100%;
+}
+
+/*----------------- Footer ---------------*/
+
+#footer{
+  padding: 2%;
+  display: flow-root;
+}
+
+#footer{
+  width: 100%;
+  background-color: #5a5a5a;
+}
+#footer #signoff{
+  /*margin-left: 10%;
+  margin-right: 10%;*/
+  margin-top: 5%;
+  width: 50%;
+  float: left;
+}
+#signoff #footer-logo {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#signoff #footer-logo .imageholder{
+  padding-left: 40%;
+  padding-right: 40%;
+  width: 100%;
+  float: center;
+}
+
+#signoff #footer-logo img{
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+#signoff h2 {
+  font-family: 'Quattrocento Sans', sans-serif;
+  text-align: center;
+  color: white;
+/*  font-size: 1vw;*/
+  }
+#signoff p{
+  color: white;
+/*  font-size: 1vw;*/
+  text-align: center;
+}
+#signoff a{
+  text-decoration: none;
+  color: pink;
+}
+#signoff #socials{
+  width: 100%;
+  text-align: center;
+  margin-left: 32%;
+  margin-right: 40%;
+  margin-bottom: 20%;
+  display: block;
+}
+#socials .imgholder {
+  width: 100%;
+  height: 100%;
+}
+#socials img{
+  max-width: 10%;
+  float: left;
+  margin: 1%;
+  overflow: hidden;
+}
+
+#footer h3{
+/*  font-size: 1vw;*/
+}
+#footer p{
+/*  font-size: 1vw;*/
+}
+#footer #Contactfoot{
+  /*margin-left: 10%;*/
+  float: right;
+  width: 40%;
+  display: inline-block;
+  overflow: hidden;
+  /*padding-bottom: 10%;*/
+  color: white;
+}
+#footer #footermap{
+  width: 100%;
+  display: inline-block;
+  float: right;
+
+}

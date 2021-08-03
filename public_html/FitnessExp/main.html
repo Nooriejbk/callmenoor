@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Fitness Template</title>
+		<!-- Add logo next to the header and on the title bar-->
+		<link rel="stylesheet" href="makepretty.css">
+		<link rel="icon" href="images/logo.png">
+
+
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<section id="logo">
+					<div class="imageholder">
+						<img src="images/logo.png" alt="Fitness Logo">
+					</div>
+					<h1 id="logoName"> Fitness Template </h1>
+				</section>
+				<ul>
+					<!--<li><a href="Main.html"> Home </a></li>-->
+					<li><a href="#personalbio"> About me </a></li>
+					<li><a href="#studio"> Gym </a></li>
+					<li><a href="#trainingbio"> Personal Training</a></li>
+        	<li><a href="#Testimonials"> Testimonials </a> </li>
+					<li><a href="#started"> Prices</a></li>
+					<!--<li><a> contact me</a></li>-->
+				</ul>
+			</nav>
+		<section id="Banner">
+			<h2> Fitness Template</h2>
+			<p> Personal Trainer </p>
+			<h3>No Pain No Gain</h3>
+			<h3> Let's get results!</h3>
+		</section>
+		<script>
+			// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			    document.getElementById("navbar").style.padding = "30px 10px";
+			    document.getElementById("logoName").style.fontSize = "1vw";
+			  } else {
+			    document.getElementById("navbar").style.padding = "80px 10px";
+			    document.getElementById("logoName").style.fontSize = "2vw";
+			  }
+			}
+		</script>
+	</header>
+
+
+		<main>
+    <section id="personalbio">
+			<div class="entityholder">
+				<div class="entity">
+					<div class = "bio">
+      			<h2> About Me </h2>
+      			<p> Lorem ipsum dolor sit amet, ei duo utroque euripidis, eam cu
+							aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant
+							eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel,
+							at commune lucilius qui. Clita fastidii usu no. Eum graeci offendit
+							liberavisse id, nominati democritum no mea, placerat fabellas pro et.
+							Ne duo mundi indoctum. Sea suscipit sententiae appellantur at, quem
+							tota elaboraret in sit. Vis vidit laudem nusquam ne, duo ea fastidii
+							noluisse. Per dolores similique et, ea ridens indoctum percipitur
+							pri. Sit temporibus adversarium complectitur in, erat recteque
+							euripidis sea ut. Ne vim everti vidisse. Veri inimicus sadipscing no
+							usu, partem partiendo qui no, ancillae percipit id mei. Sea ad assum
+							copiosae. Usu eu partem appetere ponderum. Duo nulla aeterno et, eum
+							aperiam efficiantur cu, eam rebum maiorum ne. Mel quodsi platonem
+							definitiones ei. Sed cu labores iracundia, iisque fuisset salutatus
+							ea qui. Quo ne cetero repudiandae instructior. Est ut urbanitas
+							omittantur, nec in melius fastidii petentium, quo altera timeam
+							invenire an. Nam no quando soleat eligendi. Eam vocent interesset in.
+							Doming iudicabit sadipscing ne sit. Ullum prompta nec ex. Nec eu
+							quas scripserit instructior. <br><br>Lorem ipsum dolor sit amet, ei
+							duo utroque euripidis, eam cu aperiri mnesarchum, sale erant virtute
+							mel ea. Exerci abhorreant eum cu, nec feugait mentitum repudiandae
+							an. Ne fugit quodsi mel, at commune lucilius qui. Clita fastidii usu
+							no. Eum graeci offendit liberavisse id, nominati democritum no mea,
+							placerat fabellas pro et. Ne duo mundi indoctum. Sea suscipit sententiae appellantur at, quem tota elaboraret in sit. Vis vidit laudem nusquam ne, duo ea fastidii noluisse. Per dolores similique et, ea ridens indoctum percipitur pri. Sit temporibus adversarium complectitur in, erat recteque euripidis sea ut. Ne vim everti vidisse. Veri inimicus sadipscing no usu, partem partiendo qui no, ancillae percipit id mei. Sea ad assum copiosae. Usu eu partem appetere ponderum. Duo nulla aeterno et, eum aperiam efficiantur cu, eam rebum maiorum ne. Mel quodsi platonem definitiones ei. Sed cu labores iracundia, iisque fuisset salutatus ea qui. Quo ne cetero repudiandae instructior. Est ut urbanitas omittantur, nec in melius fastidii petentium, quo altera timeam invenire an. Nam no quando soleat eligendi. Eam vocent interesset in. Doming iudicabit sadipscing ne sit. Ullum prompta nec ex. Nec eu quas scripserit instructior. <br> <br>Lorem ipsum dolor sit amet, ei duo utroque euripidis, eam cu aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel, at commune lucilius qui. Clita fastidii usu no. </p>
+					</div>
+				</div>
+				<div class="entity">
+					<div class="imgholder">
+						<img src="images/TrainerProfileImage.jpg" alt="Trainer Profile Image">
+					</div>
+				</div>
+			</div>
+    </section>
+		<section id="studio">
+			<h2> The studio </h2>
+			<div class="entityholder">
+				<div class="entity grid">
+					<div class="row">
+						<div class="column">
+							<div class="imageholder">
+								<img src="images/studioImage1.jpg">
+							</div>
+							<div class="imageholder">
+								<img src="images/studioImage2.jpg">
+							</div>
+						</div>
+						<div class="column">
+							<div class="imageholder">
+								<img src="images/studioImage3.jpg">
+							</div>
+							<div class="imageholder">
+								<img src="images/studioImage4.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="entity" id="info">
+			<h3>Lorem ipsum dolor sit amet, </h3><p> ei duo utroque euripidis, eam cu
+				aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant
+				eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel,
+				at commune lucilius qui. Clita fastidii usu no. Eum graeci offendit
+				liberavisse id, nominati democritum no mea, placerat fabellas pro et.
+				Ne duo mundi indoctum. <br><br>Sea suscipit sententiae appellantur at, quem
+				tota elaboraret in sit. Vis vidit laudem nusquam ne, duo ea fastidii
+				noluisse. Per dolores similique et, ea ridens indoctum percipitur
+				pri. Sit temporibus adversarium complectitur in, erat recteque
+				euripidis sea ut. Ne vim everti vidisse. Veri inimicus sadipscing no
+				usu, partem partiendo qui no, ancillae percipit id mei. <br><br>Sea ad assum
+				copiosae. Usu eu partem appetere ponderum. Duo nulla aeterno et, eum
+				aperiam efficiantur cu, eam rebum maiorum ne. Mel quodsi platonem
+				definitiones ei. Sed cu labores iracundia, iisque fuisset salutatus
+				ea qui. Quo ne cetero repudiandae instructior. Est ut urbanitas
+				omittantur, nec in melius fastidii petentium, quo altera timeam
+				invenire an. Nam no quando soleat eligendi. Eam vocent interesset in.
+				Doming iudicabit sadipscing ne sit. Ullum prompta nec ex. Nec eu
+				quas scripserit instructior. </p>
+			</div>
+
+		</div>
+		</section>
+		<!--
+		<section id="trainingbio" >
+			<img src="images/rowImage1.jpg">
+			<img src="images/rowImage1.jpg">
+			<img src="images/rowImage1.jpg">
+			<img src="images/rowImage1.jpg">
+			<img src="images/rowImage1.jpg">
+			<img src="images/rowImage1.jpg">
+
+		</section>
+	-->
+		<section id="Testimonials" >
+			<h2> Testimonials</h2>
+			<div class="slideshow-container">
+
+			<div class="mySlides">
+			  <div class="numbertext">1 / 5</div>
+				<div class="entityholder" >
+					<div class="onlytext">
+						<div class = "bio">
+	      			<q> Lorem ipsum dolor sit amet, ei duo utroque euripidis, eam cu
+								aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant
+								eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel,
+								at commune lucilius qui. </q>
+							<p> Testimonials 1 </p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mySlides">
+			  <div class="numbertext">2 / 5</div>
+				<div class="entityholder" >
+					<div class="onlytext">
+						<div class = "bio">
+							<q> Lorem ipsum dolor sit amet, ei duo utroque euripidis, eam cu
+								aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant
+								eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel,
+								at commune lucilius qui. </q>
+							<p> Testimonials 2 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mySlides">
+			  <div class="numbertext">3 / 5</div>
+				<div class="entityholder" >
+					<div class="onlytext">
+						<div class = "bio">
+	      			<q> Lorem ipsum dolor sit amet, ei duo utroque euripidis, eam cu
+								aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant
+								eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel,
+								at commune lucilius qui. </q>
+							<p> Testimonials 3 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">4 / 5</div>
+				<div class="entityholder" >
+					<div class="onlytext">
+						<div class = "bio">
+	      			<q> Lorem ipsum dolor sit amet, ei duo utroque euripidis, eam cu
+								aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant
+								eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel,
+								at commune lucilius qui.</q>
+							<p> Testimonials 4 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">5 / 5</div>
+				<div class="entityholder" >
+					<div class="onlytext">
+						<div class = "bio">
+	      			<q> Lorem ipsum dolor sit amet, ei duo utroque euripidis, eam cu
+								aperiri mnesarchum, sale erant virtute mel ea. Exerci abhorreant
+								eum cu, nec feugait mentitum repudiandae an. Ne fugit quodsi mel,
+								at commune lucilius qui.</q>
+							<p> Testimonials 5 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<br>
+
+			<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span>
+  			<span class="dot" onclick="currentSlide(2)"></span>
+  			<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+
+			<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+
+						if (n > slides.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";
+						dots[slideIndex-1].className += " active";
+						setTimeout(showSlides, 50000); // Change image every 2 seconds
+						}
+
+					</script>
+			</script>
+
+		</section>
+
+
+<!--
+		<section id="started" >
+				<h2> Packages </h2>
+				<p> Personal training sessions can be bought in bulk or individually </p>
+				<div id="pricecolumn">
+					<div id="pricerow">
+						<p> 1 session a week </p><br>
+					</div>
+					<div id="pricerow">
+						<h3> £20 each</h3><br>
+					</div>
+					<div id="pricerow">
+						<p> 2 sessions a week </p><br>
+					</div>
+					<div id="pricerow">
+						<h3> £20 </h3><br>
+					</div>
+				</div>
+				<div id="pricecolumn">
+					<div id="pricerow">
+						<p> 3 sessions a week </p><br>
+					</div>
+					<div id="pricerow">
+						<h3> £20 </h3><br>
+					</div>
+					<div id="pricerow">
+						<p> 4 sessions a week </p><br>
+					</div>
+					<div id="pricerow">
+						<h3> £20 </h3><br>
+					</div>
+				</div>
+				<script>
+					function openForm() {
+						document.getElementById("popupForm").style.display = "block";
+					}
+					function closeForm() {
+						document.getElementById("popupForm").style.display = "none";
+					}
+				</script>
+				<button onclick="openform()">Contact</button>
+				<div class="form-popup" id="popup-Form">
+	  			<form action="/action_page.php" class="form-container">
+						<h2> Contact Me </h2>
+						<p> Insert some text here to give your<br>clients some for info on working with you.</p>
+						<label for="name"> Full Name </label><br>
+						<input type="text" placeholder="Your Name" name="name" required><br>
+						<label for="email"> Email </label><br>
+						<input type="email" placeholder="your email" name="email" required><br>
+						<label for="message"> Your Enquiry </label><br>
+						<textarea id="message" name="message" rows="5" cols="20" placeholder="Let me know what you're looking for, how experienced you are in working out and how often you want to work out."> </textarea><br>
+						<input type="checkbox"> <!--Check box for subscription box
+						<button type="submit" class="btn">Submit</button><br><br>
+						<button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button><br>
+					</form>
+				</div>
+
+				<p> personal training sessions last an hour each </p>
+				<p> Bespoke packages available on request, just contact me with your requirements.</p>
+
+		</section>
+--->
+		</main>
+		<a id="back" href="#index.html" onclick="goback()" title="Back to CallMeNoor">
+			<div class="imageholder">
+				<img src="images/icons/back-arrow.png" alt="Back to CallMeNoor">
+			</div>
+		</a>
+		<script>
+		//Get the button:
+		mybutton1 = document.getElementById("back");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction1()};
+
+		function scrollFunction1() {
+			if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+				mybutton1.style.display = "block";
+			} else {
+				mybutton1.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction1() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+		</script>
+
+		<a id="uppy" href="#top" onclick="goup()" title="Back to top">
+			<div class="imageholder">
+				<img src="images/icons/up-arrow.png" alt="Back to top">
+			</div>
+		</a>
+		<script>
+		//Get the button:
+		mybutton = document.getElementById("uppy");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+		</script>
+
+		<div id="footer">
+			<section id="signoff">
+				<section id="footer-logo">
+					<div class="imageholder">
+						<img src="images/Logo.png" alt="Fitness Logo">
+					</div>
+				</section>
+				<h2> Fitness Template </h2>
+
+				<p> Fitness Template 2021 | Created by <a href="http://www.callmenoor.com/">CallMeNoor</a></p>
+				<div id="socials">
+					<div class="imageholder">
+						<a href="https://www.instagram.com/nooriejbk/"><img src="images/icons/instagram.png" alt="my instagram" ></a>
+					</div>
+					<div class="imageholder">
+						<a href="https://www.youtube.com/"><img src="images/icons/youtube.png" alt="email me" ></a>
+					</div>
+					<div class="imageholder">
+						<a href="https://www.facebook.com/"><img src="images/icons/facebook.png" alt="my facebook" ></a>
+					</div>
+				</div>
+			</section>
+			<section id="Contactfoot">
+				<h3> Contact me </h3>
+				<p> Email : noor@callmenoor.com </p>
+				<p> Phone : 07912345678 </p>
+				<section id="newslettersign">
+					<form action="mailto:noor@callmenoor.com" class="form-inline" method="post" enctype="text/plain">
+						<h4> Subscribe to my Newsletter </h4>
+						<div id="newsletterform">
+							<input type="email" value placeholder="Email Address" name="EMAIL">
+							<input type="submit" value="Subscribe" name="subscribe" id="subbutton" onclick="newsletterfunc()">
+							<script>
+								function newsletterfunc() {
+  								alert("Welcome to The newsletter!");
+								}
+							</script>
+						</div>
+					</form>
+				</section>
+				<br>
+
+
+				<section id="footermap">
+					<iframe src="https://maps.google.com/maps?q=london%20bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" width=100% height=10% frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</section>
+			</section>
+		</div>
+	</body>
+</html>

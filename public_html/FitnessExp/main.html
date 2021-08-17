@@ -2,35 +2,34 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Fitness Template</title>
+		<title>Fitness Example Site</title>
 		<!-- Add logo next to the header and on the title bar-->
 		<link rel="stylesheet" href="makepretty.css">
 		<link rel="icon" href="images/logo.png">
-
 
 	</head>
 
 	<body id="top">
 		<header>
-			<nav>
+			<nav id="navbar">
 				<section id="logo">
 					<div class="imageholder">
 						<img src="images/logo.png" alt="Fitness Logo">
 					</div>
-					<h1 id="logoName"> Fitness Template </h1>
+					<h1 id="logoName"> Fitness Site </h1>
 				</section>
 				<ul>
 					<!--<li><a href="Main.html"> Home </a></li>-->
 					<li><a href="#personalbio"> About me </a></li>
 					<li><a href="#studio"> Gym </a></li>
-					<li><a href="#trainingbio"> Personal Training</a></li>
+					<li><a href="#trainingbio"> Personal <br>Training</a></li>
         	<li><a href="#Testimonials"> Testimonials </a> </li>
 					<li><a href="#started"> Prices</a></li>
 					<!--<li><a> contact me</a></li>-->
 				</ul>
 			</nav>
 		<section id="Banner">
-			<h2> Fitness Template</h2>
+			<h2> Fitness </h2>
 			<p> Personal Trainer </p>
 			<h3>No Pain No Gain</h3>
 			<h3> Let's get results!</h3>
@@ -339,32 +338,6 @@
 		</section>
 --->
 		</main>
-		<a id="back" href="#index.html" onclick="goback()" title="Back to CallMeNoor">
-			<div class="imageholder">
-				<img src="images/icons/back-arrow.png" alt="Back to CallMeNoor">
-			</div>
-		</a>
-		<script>
-		//Get the button:
-		mybutton1 = document.getElementById("back");
-
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction1()};
-
-		function scrollFunction1() {
-			if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-				mybutton1.style.display = "block";
-			} else {
-				mybutton1.style.display = "none";
-			}
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction1() {
-			document.body.scrollTop = 0; // For Safari
-			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-		</script>
 
 		<a id="uppy" href="#top" onclick="goup()" title="Back to top">
 			<div class="imageholder">

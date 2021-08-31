@@ -189,7 +189,7 @@ section{
 #about{
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 7%;
+  padding-top: 5%;
   width: 100%;
   display: inline-flex;
   text-align: center;
@@ -197,6 +197,7 @@ section{
   background-color:	rgb(255, 255, 255, 1);;
   border-bottom: 10px solid black;
   padding-bottom: 7%;
+  height: 100vh;
 }
 #about h2{
   margin: 0;
@@ -217,6 +218,7 @@ section{
   margin-right: 3%;
   float: left;
   text-align: center;
+  vertical-align: middle;
 }
 #about #bio{
   /*padding-top: 15%;
@@ -227,11 +229,11 @@ section{
 #about #face{
   padding-top: 8%;
   width: 32%;
-  display: inline-block
-
+  display: inline-block;
 }
 #about .imageholder{
   width: 100%;
+  vertical-align: middle;
 
 }
 #about .entity img{
@@ -379,9 +381,13 @@ section{
 }
 
 .pill__icon-img-hCjBGsFOoz {
-  width: 7vw;
+  width: 6vw;
   margin-right: 10%;
   margin: 1%;
+  max-height: 6vh;
+}
+.pill__icon-container-hCjBGsFOoz{
+  padding-right: 1%;
 }
 
 .pill__children-container-hCjBGsFOoz {
@@ -408,6 +414,7 @@ section{
   background-color: rgb(255, 255, 255, 1);
   border-bottom: 10px solid black;
   position: relative;
+  min-height: 30vh;
 }
 #updates h2, h3, p{
   text-align: center;
@@ -481,7 +488,7 @@ section{
   text-align: center;
   position: absolute;
   bottom: 5%;
-  left: 48%;
+  left: 47%;
 
 }
 /* The dots/bullets/indicators */
@@ -521,9 +528,20 @@ section{
   margin-right: 5%;
   margin-left: 5%;
 }
-#juneUp{
+#AugUp{
   padding-left: 5%;
   padding-right: 5%;
+}
+#juneUp{
+  width: 60%;
+  float: left;
+  margin-left: 7%;
+}
+#JuneImages{
+  width: 15%;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 0
 }
 #mayBios{
   width: 60%;
@@ -725,6 +743,9 @@ footer p{
   .pill__icon-img-hCjBGsFOoz {
     width: 3vw;
   }
+  .pill__icon-container-hCjBGsFOoz{
+    display: none;
+  }
   .prev{
     top: 30vh;
   }
@@ -739,6 +760,9 @@ footer p{
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 1000px) {
+  #about{
+    height: auto;
+  }
   #section06 a{
     left: 45%;
     right: 40%;*/
@@ -797,11 +821,13 @@ footer p{
   }
 }
 @media only screen and (min-width: 1500px) {
+  #about{
+    height: 100vh;
+  }
   #newest .entity{
   }
   #newest .entity p{
     font-size: 1.3vw;
-
   }
   #section06 a{
     left: 35%;
@@ -813,5 +839,8 @@ footer p{
   }
   .prev, .next {
     font-size: 3vw;
+  }
+  .pill__icon-container-hCjBGsFOoz{
+    display: none;
   }
 }

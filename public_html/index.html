@@ -19,7 +19,15 @@
   </head>
 
   <body>
-    <header id="top">
+    <header id="main-top main">
+      <div id="navbar">
+        <div class="imageholder">
+          <a href="#top" id="logo"> <img src="images/main.png"  alt="logo"> </a>
+        </div>
+        <a href="#newest">Recent</a>
+        <a href="#portfolio">Portfolios</a>
+        <a href="https://cmnblogs.wordpress.com/">Blog</a>
+      </div>
 
       <section id="banner" class="fade-in">
         <div class="imageholder" title="...or Noorie. I dont really care.">
@@ -31,44 +39,31 @@
         </div>
 
         <script>
-          $(function() {
+          function arrowAni() {
             $('a[href*=#]').on('click', function(e) {
               e.preventDefault();
               $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
             });
-          });
+          };
 
         </script>
       </section>
     </header>
 
     <main id="site">
-
-      <section id="about">
-        <div class="entityholder">
-          <div class="entity" id="face">
-            <div class="imageholder" title="My Face.">
-              <img src="images\IMG_20190128_092931_113.jpg" alt="Noor-profile">
-            </div>
-          </div>
-          <div class="entity" id="bio">
+      <section id="welcome">
+          <div class="entity">
             <h2> Welcome!</h2>
             <p> Hello and welcome to the latest iteration of CallMeNoor.com! <br><br>
                You may have been here before, you may not have, so here's the rundown...<br><br>
               I'm Noor and this is my personal website. I bought the domain with no plan on what I wanted to do with it...
-              so I've decided I'm going to use it to teach myself web development skills and also showcase any other bit
+              so I've decided I'm going to use it to teach myself web development skills and also showcase any other bits
               and bobs I want to share.<br><br>
-              The current plan is to update the site every month with new features and new info. Check out my new
-              <a class="updatey" href="#updates"><strong>update</strong></a> section to see my progress. Next update : 1st October 2021 <br> <br>
-              A little about myself, I'm about to go into a gap year from my BSc Computer Science to focus on upskilling. I'm prioritising
-              coding languages and sewing but also working on the business venture I've set out for myself.<br><br>
-              I'm also a Singer/Actress. Haven't been in much or performed in a while (pandemic :/) but when I do, it'll
-              all be here.</p>
-
-
+              The current plan is to update the site every so often with new features and new info. Check out my new
+              <a class="updatey" href="https://cmnblogs.wordpress.com/"><strong>blog</strong></a> to see my progress. <br> <br>
           </div>
-        </div>
       </section>
+
       <section id="newest">
         <h2> Recent Work </h2>
         <p> Check out my newest additions and latest youtube video</p>
@@ -76,35 +71,29 @@
 
           <div class="entity">
             <div class="resp-container">
-              <img class="resp-iframe" src="images\DepopImage.jpg" alt="Click here to see my Depop">
-              <br>
-              <h3> Selling On Depop!</h3>
-              <p> In one of my previous updates, I mentioned I started a depop page to sell my vinyl stickers
-                <a href="https://www.depop.com/stickernoor/">(StickerNoor)</a> But I have now started selling
-                my clothes on a new page <a href="https://www.depop.com/njbk/">(njbk)</a></p>
-              <p> If you would like to check out what else I'm selling, click the links above!</p>
-
+              <iframe class="resp-iframe" src="https://www.youtube.com/embed/7Vs_IMWYYIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <br>
+            <h3> Music & Acting </h3>
+            <p>  Here's my latest Acting/Music video: <br><br><strong>Valerie - Noor Jahan Cover</strong><br><br> *As seen on the Pursued by a Dragon Theatre company South Asian Artists Scratch Night in 2020</a></p>
           </div>
-
-
 
           <div class="entity">
            <div class="resp-container">
              <iframe class="resp-iframe" src="https://www.youtube.com/embed/km1_RYgOSKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              </div>
            <br>
-           <h3> Latest Youtube Video </h3>
-           <p> Singing, acting, projects and crafts <br> <br>Trying to upload more often so keep an eye out for new content every month <br><br> If you don't to wait, check out the next one >>></p>
+           <h3> Sewing Projects </h3>
+           <p> Here's my latest Sewing project video: <br><br> <strong>DIY Bean Bag Cube From Scratch</strong> <br><br>First of many sewing projects and more soon to come...</p>
          </div>
 
          <div class="entity">
            <div class="resp-container">
-             <iframe class="resp-iframe" src="https://www.youtube.com/embed/Gtb-8QpvMdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <a href="https://cmnblogs.wordpress.com/"><img class="resp-img" src="images/LieToMe-CallMeNoorBlog.png" ></img></a>
            </div>
            <br>
-           <h3> Zoya's Youtube </h3>
-           <p> My little sister has her own youtube account that I manage. We will be actively making content on that account now with a few videos coming soon. <br><br>The link above is tempermental... if its not working, click <a href="https://www.youtube.com/channel/UCHH4_ZWKl3prPGgW2fIl1sw" class="updatey"> <strong>here </strong></a></p>
+           <h3> CMN Blog </h3>
+           <p>  I've started a blog page! <br><br>  I really enjoy writing and I thought it might be nice to try it out. Going to write about the CMN updates, projects and possibly some extra thought bubbles</p>
          </div>
 
         </div>
@@ -128,7 +117,7 @@
                 >
               </span>
               <span class="pill__children-container-hCjBGsFOoz">
-                Spotlight Performer
+                Spotlight
               </span>
             </span>
             </a>
@@ -140,7 +129,7 @@
               <span class="pill__icon-container-hCjBGsFOoz">
                 <img
                   class="pill__icon-img-hCjBGsFOoz"
-                  src="FitnessExp/images/logo.png"
+                  src="FitnessExp/images/fitness.png"
                   alt="icon"
                 >
               </span>
@@ -150,181 +139,27 @@
             </span>
             </a>
           </div>
+          <div class="entity">
+            <h3> Modelling </h3>
+            <!--<a class="pill-link-hCjBGsFOoz" href="ModellingPort.html">-->
+            <span class="pill-hCjBGsFOoz">
+              <span class="pill__icon-container-hCjBGsFOoz">
+                <img
+                  class="pill__icon-img-hCjBGsFOoz"
+                  src="images\icons\photo-camera-interface-symbol-for-button.png"
+                  alt="icon"
+                >
+              </span>
+              <span class="pill__children-container-hCjBGsFOoz">
+                Coming soon...
+              </span>
+            </span>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="updates">
-        <h2> Updates </h2>
-        <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <div id="AugUp">
-    <h3> Current Update </h3>
-    <p> Ahh... The July/August update... where do I start? <br><br><strong>In the previous update I wanted to tackle:
-    </strong> add a new item to portfolio; an opening slide to the updates and add a navigation bar.<br><br>
-      So! Yes, July and August updates were merged into one update and were not even complete. The reason for that is
-      I was sick. I had a bad reaction after my first covid jab right at the end of July and was recovering for most of
-      August. But, I am all better now, working with some doctors to find out what happened and in terms of me keeping
-      to this goal of a new update very month, I wouldn't consider this a fail as there was nothing I could've done.
-      <br><br>
-      Swiftly moving on... In terms of my first goal, Complete! I have added a website that I built previously to my new
-      web development section of my portfolio. It was originally for a client but they no longer wanted it so I am now going
-      to use it to display more of my development skills but have them more tailored to a niche. This one being fitness/personal
-      training. <br><br>
-      Originally I did think the opening slide was a good idea but now I'm not the biggest fan of this section of the website
-      at all, therefore I didn't do it. I think instead I'm going to work on moving this section into it's own blog space so
-      it doesn't take as much space as it does and the users who arent interested in the updates, don't have to see it.<br><br>
-      Last but not least, the navigation bar. No, I wasn't able to complete the navigation bar for CallMeNoor but! I do
-      have one on my fitness example on my portfolio... I still wouldn't consider the task complete but wasn't a complete fail.
-      <br><br>
-      Obviously this month's update wasn't the best in terms of updates and that's fine but next month I want to push it to
-      the next level. When it comes to my web development skills, this site is definitely helping me practice but theres not
-      many things im really learning, so to give myself a challenge I'm going to use the month of september to learn a new
-      coding language (TBD). With that, in order to demonstrate my new skills I will attempt to upgrade a section of my
-      site (also, TBD) using this new language. I think a lot of this months work will be upgrading as I also need to
-      upgrade this updates section into a blog and the fitness website isn't complete, so I'll be working on that too.<br><br>
-      <strong>For my next update I want to focus on:</strong> Move the update section to a blog, upgrade a section using a new
-      coding language(not HTML/CSS/Javascript) and fix bugs and design flaws in the Fitness Example </p>
-  </div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <div class="entityholder">
-      <div class="entity" id="juneUp">
-      <h3> June Update </h3>
-      <p> My June update is the update I'm the most proud of at the minute. This is the start of CallMeNoor at
-        it's fullest. <br><br><strong>In the previous update I wanted to tackle:</strong> continue button
-        responsivness, put stuff in the portfolio and an update section for my progress.<br><br>
-        I finally fixed the responsivness of my continue button, it took so long to work out that the span tag
-        doesn't like percentage sizing... I hate working with pxl sizing so but I had to bite the bullet for this.
-        With this I also fixed some general bugs like sizing or wrong colours.
-        <br><br>
-        I don't know what I was thinking before but the spotlight like was always a perfect thing to put in the
-        portfolio and for whatever reason it took me 2 months to get to that conclusion. <br><br>And last but
-        definitely not least, the amazing update section! For a small period of time I was stuck between having
-        a slideshow style section with all the changes or a blog. I've made slideshows before and making a blog
-        felt like a lot of extra effort for what it was worth. I do still like the idea of having a blog but I
-        just don't have many ideas for content. <br><br>
-        <strong>For my next update I want to focus on:</strong> add a new item to portfolio; an opening slide to
-        the updates and add a navigation bar.</p>
-    </div>
-    <div class="entity" id="JuneImages">
-      <img src="images/AugUpdate/1.jpg">
-      <img src="images/AugUpdate/2.jpg">
-      <img src="images/AugUpdate/3.jpg">
-      <img src="images/AugUpdate/4.jpg">
-      <img src="images/AugUpdate/5.jpg">
-
-    </div>
-  </div>
-</div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <div class="entityholder">
-      <div class="entity" id="mayBios">
-      <h3> May Update </h3>
-      <p> This was my first update for the website. I didn't want to throw myself into the deep end and instead
-          decided to tackle a few things at a time.<br><br><strong>In the previous update I wanted to tackle:</strong>
-          prettier continue button; more content; nicer footer.<br><br>
-          The continue button was an easy fix I just overthought, honestly. With the content, I made a list of
-          things I want and things I can do and believe it or not, there were no overlap...yeah. But I knew I
-          wanted a place to display all of my work and I thought I can make space for that as if I'm telling
-          people what my goals are so I could be held accountable for doing it. Oddly, the welcome section was a
-          last minute decision to beef up the site and I've grown to it, so I think it's gonna stay. I got
-          inspiration for the footer from several websites I visited but with a more minimal style as I don't
-          actually have anything to put there.<br><br>
-          <strong>For my next update I want to focus on:</strong> responsivness of elements and put something in the portfolio,
-          it looks quite sad at the minute. I also want a place to store my progress with the site, maybe an
-          update section (inception) or incorporate a blog some how.
-          </p>
-    </div>
-    <div class="entity" id="mayImages">
-      <img src="images/Screenshot2021-06-29184054.jpg">
-      <img src="images/Screenshot2021-06-29184226.jpg">
-      <img src="images/Screenshot2021-06-29184328.jpg">
-      <img src="images/Screenshot2021-06-29184444.jpg">
-      <img src="images/Screenshot2021-06-29184530.jpg">
-
-    </div>
-    </div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <div class="entityholder">
-      <div class="entity" id="ogBios">
-      <h3> Original Website </h3>
-      <p> In 2019 I set myself the task to update my website with my own coding, as previously it was a weebly site
-         and made from a template I had customised.<br><br>
-
-         As you can see, I was lacking content and ideas to the point where my amazing continue button would scroll
-         about half a screen and reveal the whole site (How embarrassing...) <br><br>
-
-         I don't remember how long I spent on this version but I couldn't think of anything else to put on this page
-         and the things I did think of, I felt insecure about sharing.<br><br>
-
-         <strong>For my update I want to focus on:</strong> the hideous continue button; the footer and the lack of content.
-         All of which I tackled in the next version of the site.
-       </p>
-    </div>
-    <div class="entity" id="ogImages">
-      <img src="images/Annotation2020-05-11212655.png">
-      <img src="images/Annotation2020-05-11212729.png">
-    </div>
-    </div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div id="dotGroup">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-      </section>
-
-          <a id="uppy" href="#top" onclick="goup()" title="Back to top">
+          <a id="uppy" href="#top" title="Back to top">
       			<div class="imageholder">
       				<img src="images/home.png" alt="Back to top">
       			</div>
@@ -350,6 +185,7 @@ function showSlides(n) {
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
           }
           </script>
+
           <footer>
             <div id="signoff">
               <div id="footer-logo">
@@ -359,7 +195,7 @@ function showSlides(n) {
               </div>
               <h2> CallMeNoor</h2>
 
-              <p>CallMeNoor 2021 | Created by <a href="http://www.callmenoor.com/">CallMeNoor</a></p>
+              <p>CallMeNoor 2022 | Created by <a href="http://www.callmenoor.com/">CallMeNoor</a></p>
               <div id="socials">
                 <div class="imageholder">
                   <a href="https://www.instagram.com/nooriejbk/"><img src="images/icons/017-instagram-2.png" alt="instagram logo" ></a>
@@ -376,6 +212,11 @@ function showSlides(n) {
               </div>
             </div>
             <div id="Contactfoot">
+              <h2> Menu </h2>
+              <a href="https://cmnblogs.wordpress.com">Blog</a><br>
+              <!--<a href="">Portfolio</a><br>-->
+              <a href="https://www.youtube.com/channel/UCMInoVXY7KkH2T5NrTch_rw">NoorieJBK</a><br>
+              <a href="https://www.youtube.com/channel/UCgQtNFtWilmcQx-07DxyX9g">NoobDoesIt</a><br>
               <h2> Contact Me </h2>
               <p> Email : Noor@CallMeNoor.com </p>
               <br>
